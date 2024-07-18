@@ -235,11 +235,6 @@
 
   </aside><!-- End Sidebar-->
   
-  
-  
-  
-  
-  
   <!-- AQUI COMINEZA EL FORM-->
   <main id="main" class="main">
 
