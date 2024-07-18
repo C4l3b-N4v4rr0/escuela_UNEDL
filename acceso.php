@@ -139,7 +139,7 @@ if(isset($_SESSION['username'])==true && $_SESSION['tipo']==2){
   <script type="text/javascript">
       $(function (){              
         $('#registrate').click(function (e){
-             
+             e.preventDefault;
             var u = $('#yourUsername').val();
             var p = $('#yourPassword').val();
             
