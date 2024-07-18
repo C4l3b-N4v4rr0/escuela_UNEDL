@@ -62,17 +62,17 @@ if(isset($_SESSION['username'])==false){
       }
 
       .bg-primary {
-        background-color: ##00a2ff !important;
+        background-color: #00a2ff !important;
       }
 
       .text-white {
         color: #fff !important;
       }
       .bg-secondary {
-        background-color: ##fb2440 !important;
+        background-color: #fb2440 !important;
       }
       .bg-warning {
-        background-color: ##68ddbd !important;
+        background-color: #68ddbd !important;
       }
 
       .text-white {
@@ -135,7 +135,7 @@ if(isset($_SESSION['username'])==false){
     </header><!-- End Header -->
   
 
-      }else if(isset($_SESSION['username'])=='July'){
+      }else if(isset($_SESSION['username'])=='July'){ ?>
         <nav class="header-nav ms-auto">
         <ul class="d-flex align-items-center">
   
@@ -172,7 +172,7 @@ if(isset($_SESSION['username'])==false){
   
     </header><!-- End Header -->
 
-      }?>
+      }
 
     
 
