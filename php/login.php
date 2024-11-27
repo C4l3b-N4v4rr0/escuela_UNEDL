@@ -2,7 +2,7 @@
 require 'config.php'; 
 
     $us = mysqli_real_escape_string($con,$_POST['yourUsername']);
-    $pa = mysqli_real_escape_string($con,$_POST['yourPassword']);
+    $pa = mysqli_real_escape_string($con,sha1($_POST['yourPassword']));
 
     
 
@@ -11,8 +11,8 @@ require 'config.php';
             FROM 
                 Usuarios u
             WHERE 
-                u.User LIKE '".$us."'
-            AND u.Pass LIKE '".$pa."'    
+                u.User = '".$us."'
+            AND u.Pass = '".$pa."'    
             ";
 
 
@@ -24,9 +24,8 @@ require 'config.php';
             $_SESSION['username'] = $row['User']; 
             $_SESSION['tipo'] = $row['tipoUser'];                      
         }                    
-        
-    }else{ 
-        
+        echo 1;
+    }else{         
         echo"mal";
         
     }

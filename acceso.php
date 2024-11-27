@@ -134,7 +134,7 @@ if(isset($_SESSION['username'])==true && $_SESSION['tipo']==2){
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="../js/jquery.js"></script>
+  <script src="js/jquery.js"></script>
   
   <script type="text/javascript">
       $(function (){              
@@ -148,10 +148,10 @@ if(isset($_SESSION['username'])==true && $_SESSION['tipo']==2){
                 yourPassword:p                             
             };            
             $.post('php/login.php',obj,function(resp){ 
-                if(resp = "mal"){
-                    console.log("campos incorrectos");
+                if(resp = 1){
+                  window.location.reload();
                 }else{                      
-                    window.location.reload();
+                   alert['mal']; 
                 }
             });             
         });
